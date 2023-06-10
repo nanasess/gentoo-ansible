@@ -109,3 +109,8 @@
         dest: /etc/portage/repos.conf/gentoo.conf
         owner: root
         group: root
+    - copy:
+        src: ./etc/wsl.conf
+        dest: /etc/wsl.conf
+        owner: root
+        group: root
