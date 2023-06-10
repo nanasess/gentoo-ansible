@@ -1,0 +1,6 @@
+*~
+/etc/portage/env/*
+/etc/portage/make.profile
+/etc/portage/package.use/zz-autounmask
+/etc/portage/repos.conf/eselect-repo.conf
+/etc/portage/repos.conf/layman.conf
