@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - copy:
+        src: ./etc/portage/make.conf
+        dest: /etc/portage/make.conf
+        owner: root
+        group: root
