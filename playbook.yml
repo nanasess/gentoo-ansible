@@ -915,3 +915,4 @@
           - x11-misc/xvfb-run
           - x11-themes/adwaita-icon-theme
           - x11-themes/hicolor-icon-theme
+          - net-misc/telnet-bsd
