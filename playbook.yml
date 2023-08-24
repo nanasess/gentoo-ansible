@@ -35,6 +35,11 @@
         owner: root
         group: root
     - copy:
+        src: ./etc/portage/package.accept_keywords/mycli
+        dest: /etc/portage/package.accept_keywords/mycli
+        owner: root
+        group: root
+    - copy:
         src: ./etc/portage/package.accept_keywords/mysql
         dest: /etc/portage/package.accept_keywords/mysql
         owner: root
@@ -229,7 +234,7 @@
           - app-crypt/rhash
           - app-crypt/seahorse
           - app-dicts/migemo-dict
-          - =app-editors/emacs-29.0.9999-r1
+          - "=app-editors/emacs-29.1.9999"
           - ">=app-editors/emacs-28.3_rc1-r4"
           - app-editors/gvim
           - app-editors/vim-core
@@ -443,7 +448,6 @@
           - dev-python/calver
           - dev-python/certifi
           - dev-python/cffi
-          - dev-python/charset_normalizer
           - dev-python/cleo
           - dev-python/cli_helpers
           - dev-python/click
@@ -537,7 +541,6 @@
           - dev-python/tomlkit
           - dev-python/trove-classifiers
           - dev-python/typing-extensions
-          - dev-python/uri_template
           - dev-python/urllib3
           - dev-python/wcwidth
           - dev-python/webcolors
