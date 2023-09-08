@@ -55,6 +55,11 @@
         owner: root
         group: root
     - copy:
+        src: ./etc/portage/package.accept_keywords/sqlglot
+        dest: /etc/portage/package.accept_keywords/sqlglot
+        owner: root
+        group: root
+    - copy:
         src: ./etc/portage/package.mask/emacs
         dest: /etc/portage/package.mask/emacs
         owner: root
@@ -387,6 +392,7 @@
           - dev-libs/nss
           - dev-libs/oniguruma
           - dev-libs/openssl
+          - dev-libs/openssl-compat
           - dev-libs/popt
           - dev-libs/protobuf
           - dev-libs/pugixml
@@ -519,7 +525,6 @@
           - dev-python/pytzdata
           - dev-python/pyyaml
           - dev-python/rapidfuzz
-          - dev-python/rapidfuzz_capi
           - dev-python/regex
           - dev-python/requests
           - dev-python/resolvelib
@@ -678,7 +683,6 @@
           - net-nds/openldap
           - net-print/cups
           - net-print/cups-filters
-          - perl-core/Compress-Raw-Zlib
           - perl-core/File-Temp
           - sec-keys/openpgp-keys-gentoo-release
           - sys-apps/acl
