@@ -94,6 +94,12 @@
         dest: /etc/portage/package.use/emacs
         owner: root
         group: root
+    - name: Copy /etc/portage/package.use/emacs-common
+      copy:
+        src: ./etc/portage/package.use/emacs-common
+        dest: /etc/portage/package.use/emacs-common
+        owner: root
+        group: root
     - name: Copy /etc/portage/package.use/git
       copy:
         src: ./etc/portage/package.use/git
@@ -124,6 +130,13 @@
         dest: /etc/portage/package.use/php
         owner: root
         group: root
+    - name: Copy /etc/portage/package.use/eselect-php
+      copy:
+        src: ./etc/portage/package.use/eselect-php
+        dest: /etc/portage/package.use/eselect-php
+        owner: root
+        group: root
+
     - name: Copy /etc/portage/package.use/pinentry
       copy:
         src: ./etc/portage/package.use/pinentry
@@ -140,6 +153,12 @@
       copy:
         src: ./etc/portage/package.use/libpcre2
         dest: /etc/portage/package.use/libpcre2
+        owner: root
+        group: root
+    - name: Copy /etc/portage/package.use/lttng-ust
+      copy:
+        src: ./etc/portage/package.use/lttng-ust
+        dest: /etc/portage/package.use/lttng-ust
         owner: root
         group: root
     - name: Copy /etc/portage/repos.conf/gentoo.conf
