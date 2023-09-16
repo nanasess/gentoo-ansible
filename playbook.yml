@@ -621,7 +621,6 @@
           - dev-util/gtk-doc-am
           - dev-util/gtk-update-icon-cache
           - dev-util/itstool
-          - dev-util/lttng-ust
           - dev-util/meson
           - dev-util/meson-format-array
           - dev-util/ninja
