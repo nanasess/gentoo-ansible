@@ -10,169 +10,76 @@
         dest: /etc/portage/make.conf
         owner: root
         group: root
-    - name: Copy /etc/portage/package.accept_keywords/chromedriver-bin
+
+    - name: Copy package.accept_keywords
       copy:
-        src: ./etc/portage/package.accept_keywords/chromedriver-bin
-        dest: /etc/portage/package.accept_keywords/chromedriver-bin
+        src: "./etc/portage/package.accept_keywords/{{ item }}"
+        dest: "/etc/portage/package.accept_keywords/{{ item }}"
         owner: root
         group: root
-    - name: Copy /etc/portage/package.accept_keywords/emacs
+      loop:
+        - chromedriver-bin
+        - emacs
+        - firebird
+        - github-cli
+        - litecli
+        - mycli
+        - php
+        - terraform
+        - sqlglot
+
+    - name: Copy package.mask
       copy:
-        src: ./etc/portage/package.accept_keywords/emacs
-        dest: /etc/portage/package.accept_keywords/emacs
+        src: "./etc/portage/package.mask/{{ item }}"
+        dest: "/etc/portage/package.mask/{{ item }}"
         owner: root
         group: root
-    - name: Copy /etc/portage/package.accept_keywords/firebird
-      copy:
-        src: ./etc/portage/package.accept_keywords/firebird
-        dest: /etc/portage/package.accept_keywords/firebird
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/github-cli
-      copy:
-        src: ./etc/portage/package.accept_keywords/github-cli
-        dest: /etc/portage/package.accept_keywords/github-cli
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/litecli
-      copy:
-        src: ./etc/portage/package.accept_keywords/litecli
-        dest: /etc/portage/package.accept_keywords/litecli
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/mycli
-      copy:
-        src: ./etc/portage/package.accept_keywords/mycli
-        dest: /etc/portage/package.accept_keywords/mycli
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/mysql
-      copy:
-        src: ./etc/portage/package.accept_keywords/mysql
-        dest: /etc/portage/package.accept_keywords/mysql
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/php
-      copy:
-        src: ./etc/portage/package.accept_keywords/php
-        dest: /etc/portage/package.accept_keywords/php
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/terraform
-      copy:
-        src: ./etc/portage/package.accept_keywords/terraform
-        dest: /etc/portage/package.accept_keywords/terraform
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.accept_keywords/sqlglot
-      copy:
-        src: ./etc/portage/package.accept_keywords/sqlglot
-        dest: /etc/portage/package.accept_keywords/sqlglot
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.mask/emacs
-      copy:
-        src: ./etc/portage/package.mask/emacs
-        dest: /etc/portage/package.mask/emacs
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.mask/mysql
-      copy:
-        src: ./etc/portage/package.mask/mysql
-        dest: /etc/portage/package.mask/mysql
-        owner: root
-        group: root
+      loop:
+        - emacs
+        - mysql
+
     - name: Copy /etc/portage/package.unmask
       copy:
         src: ./etc/portage/package.unmask
         dest: /etc/portage/package.unmask
         owner: root
         group: root
-    - name: Copy /etc/portage/package.use/emacs
+
+    - name: Copy package.use/emacs
       copy:
         src: ./etc/portage/package.use/emacs
         dest: /etc/portage/package.use/emacs
         owner: root
         group: root
-    - name: Copy /etc/portage/package.use/emacs-common
-      copy:
-        src: ./etc/portage/package.use/emacs-common
-        dest: /etc/portage/package.use/emacs-common
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/git
-      copy:
-        src: ./etc/portage/package.use/git
-        dest: /etc/portage/package.use/git
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/mysql
-      copy:
-        src: ./etc/portage/package.use/mysql
-        dest: /etc/portage/package.use/mysql
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/nodejs
-      copy:
-        src: ./etc/portage/package.use/nodejs
-        dest: /etc/portage/package.use/nodejs
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/onedrive
-      copy:
-        src: ./etc/portage/package.use/onedrive
-        dest: /etc/portage/package.use/onedrive
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/php
-      copy:
-        src: ./etc/portage/package.use/php
-        dest: /etc/portage/package.use/php
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/eselect-php
-      copy:
-        src: ./etc/portage/package.use/eselect-php
-        dest: /etc/portage/package.use/eselect-php
-        owner: root
-        group: root
+      loop:
+        - emacs
+        - emacs-common
+        - git
+        - qtwidgets
+        - mysql
+        - nodejs
+        - onedrive
+        - php
+        - eselect-php
+        - pinentry
+        - systemd
+        - libpcre2
+        - lttng-ust
 
-    - name: Copy /etc/portage/package.use/pinentry
-      copy:
-        src: ./etc/portage/package.use/pinentry
-        dest: /etc/portage/package.use/pinentry
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/systemd
-      copy:
-        src: ./etc/portage/package.use/systemd
-        dest: /etc/portage/package.use/systemd
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/libpcre2
-      copy:
-        src: ./etc/portage/package.use/libpcre2
-        dest: /etc/portage/package.use/libpcre2
-        owner: root
-        group: root
-    - name: Copy /etc/portage/package.use/lttng-ust
-      copy:
-        src: ./etc/portage/package.use/lttng-ust
-        dest: /etc/portage/package.use/lttng-ust
-        owner: root
-        group: root
     - name: Copy /etc/portage/repos.conf/gentoo.conf
       copy:
         src: ./etc/portage/repos.conf/gentoo.conf
         dest: /etc/portage/repos.conf/gentoo.conf
         owner: root
         group: root
+
     - name: Copy /etc/wsl.conf
       copy:
         src: ./etc/wsl.conf
         dest: /etc/wsl.conf
         owner: root
         group: root
+
     - name: Install required packages
       portage:
         package: "{{ packages }}"
