@@ -27,6 +27,8 @@
         - php
         - terraform
         - sqlglot
+        - dust
+        - eza
 
     - name: Copy package.mask
       copy:
@@ -645,7 +647,7 @@
           - sys-apps/diffutils
           - sys-apps/ed
           - sys-apps/elfix
-          - sys-apps/exa
+          - sys-apps/eza
           - sys-apps/file
           - sys-apps/findutils
           - sys-apps/gawk
