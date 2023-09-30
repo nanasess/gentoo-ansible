@@ -27,6 +27,7 @@
         - php
         - terraform
         - sqlglot
+        - dust
 
     - name: Copy package.mask
       copy:
