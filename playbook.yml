@@ -29,6 +29,7 @@
         - sqlglot
         - dust
         - eza
+        - hub
 
     - name: Copy package.mask
       copy:
@@ -875,3 +876,4 @@
           - x11-themes/adwaita-icon-theme
           - x11-themes/hicolor-icon-theme
           - net-misc/telnet-bsd
+          - dev-vcs/hub
