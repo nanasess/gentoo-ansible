@@ -48,10 +48,10 @@
         owner: root
         group: root
 
-    - name: Copy package.use/emacs
+    - name: Copy package.use
       copy:
-        src: ./etc/portage/package.use/emacs
-        dest: /etc/portage/package.use/emacs
+        src: "./etc/portage/package.use/{{ item }}"
+        dest: "/etc/portage/package.use/{{ item }}"
         owner: root
         group: root
       loop:
@@ -877,3 +877,4 @@
           - x11-themes/hicolor-icon-theme
           - net-misc/telnet-bsd
           - dev-vcs/hub
+          - gui-apps/wl-clipboard
