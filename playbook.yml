@@ -68,6 +68,7 @@
         - systemd
         - libpcre2
         - lttng-ust
+        - libcanberra
 
     - name: Copy /etc/portage/repos.conf/gentoo.conf
       copy:
@@ -409,7 +410,6 @@
           - dev-python/certifi
           - dev-python/cffi
           - dev-python/cleo
-          - dev-python/cli_helpers
           - dev-python/click
           - dev-python/configobj
           - dev-python/crashtest
@@ -878,3 +878,5 @@
           - net-misc/telnet-bsd
           - dev-vcs/hub
           - gui-apps/wl-clipboard
+          - kde-apps/kcachegrind
+          - net-analyzer/speedtest-cli
