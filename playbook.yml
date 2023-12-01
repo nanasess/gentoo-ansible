@@ -880,3 +880,4 @@
           - gui-apps/wl-clipboard
           - kde-apps/kcachegrind
           - net-analyzer/speedtest-cli
+          - app-text/pandoc-bin
