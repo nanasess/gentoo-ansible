@@ -30,6 +30,7 @@
         - dust
         - eza
         - hub
+        - tree-sitter-php
 
     - name: Copy package.mask
       copy:
@@ -881,3 +882,4 @@
           - kde-apps/kcachegrind
           - net-analyzer/speedtest-cli
           - app-text/pandoc-bin
+          - dev-libs/tree-sitter-php
