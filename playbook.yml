@@ -195,7 +195,7 @@
           - app-crypt/rhash
           - app-crypt/seahorse
           - app-dicts/migemo-dict
-          - "=app-editors/emacs-29.1.9999"
+          - "=app-editors/emacs-29.2.9999"
           - ">=app-editors/emacs-28.3_rc1-r4"
           - app-editors/gvim
           - app-editors/vim-core
