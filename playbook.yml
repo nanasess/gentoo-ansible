@@ -25,7 +25,6 @@
         - litecli
         - mycli
         - php
-        - terraform
         - sqlglot
         - dust
         - eza
@@ -195,7 +194,7 @@
           - app-crypt/rhash
           - app-crypt/seahorse
           - app-dicts/migemo-dict
-          - "=app-editors/emacs-29.2.9999"
+          - "=app-editors/emacs-29.3.9999"
           - ">=app-editors/emacs-28.3_rc1-r4"
           - app-editors/gvim
           - app-editors/vim-core
@@ -522,19 +521,19 @@
           - dev-ruby/stringio
           - dev-ruby/test-unit
           - dev-ruby/typeprof
-          - dev-util/cmake
+          - dev-build/cmake
           - dev-util/colm
           - dev-util/desktop-file-utils
           - dev-util/gdbus-codegen
           - dev-util/github-cli
           - dev-util/glib-utils
           - dev-util/gperf
-          - dev-util/gtk-doc-am
+          - dev-build/gtk-doc-am
           - dev-util/gtk-update-icon-cache
           - dev-util/itstool
-          - dev-util/meson
-          - dev-util/meson-format-array
-          - dev-util/ninja
+          - dev-build/meson
+          - dev-build/meson-format-array
+          - dev-build/ninja
           - dev-util/patchutils
           - dev-util/pkgconf
           - dev-util/ragel
@@ -683,12 +682,11 @@
           - sys-apps/xdg-dbus-proxy
           - sys-auth/pambase
           - sys-auth/passwdqc
-          - sys-devel/autoconf
-          - sys-devel/autoconf
-          - sys-devel/autoconf-archive
-          - sys-devel/autoconf-wrapper
-          - sys-devel/automake
-          - sys-devel/automake-wrapper
+          - dev-build/autoconf
+          - dev-build/autoconf-archive
+          - dev-build/autoconf-wrapper
+          - dev-build/automake
+          - dev-build/automake-wrapper
           - sys-devel/bc
           - sys-devel/binutils
           - sys-devel/binutils-config
@@ -698,26 +696,20 @@
           - sys-devel/gcc-config
           - sys-devel/gettext
           - sys-devel/gnuconfig
-          - sys-devel/libtool
-          - sys-devel/llvm
-          - sys-devel/llvm
+          - dev-build/libtool
           - sys-devel/llvm
           - sys-devel/llvm-common
           - sys-devel/llvm-toolchain-symlinks
-          - sys-devel/llvm-toolchain-symlinks
           - sys-devel/llvmgold
           - sys-devel/m4
-          - sys-devel/make
+          - dev-build/make
           - sys-devel/patch
           - sys-fs/e2fsprogs
           - sys-fs/udev-init-scripts
           - sys-kernel/gentoo-sources
-          - sys-kernel/gentoo-sources
-          - sys-kernel/installkernel-gentoo
           - sys-kernel/linux-headers
           - sys-libs/binutils-libs
           - sys-libs/cracklib
-          - sys-libs/db
           - sys-libs/db
           - sys-libs/gdbm
           - sys-libs/glibc
