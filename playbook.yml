@@ -875,3 +875,4 @@
           - net-analyzer/speedtest-cli
           - app-text/pandoc-bin
           - dev-libs/tree-sitter-php
+          - app-eselect/eselect-dotnet
