@@ -30,6 +30,7 @@
         - eza
         - hub
         - tree-sitter-php
+        - fzf
 
     - name: Copy package.mask
       copy:
@@ -445,7 +446,6 @@
           - dev-python/markupsafe
           - dev-python/more-itertools
           - dev-python/netaddr
-          - dev-python/nspektr
           - dev-python/numpy
           - dev-python/ordered-set
           - dev-python/packaging
@@ -876,3 +876,4 @@
           - app-text/pandoc-bin
           - dev-libs/tree-sitter-php
           - app-eselect/eselect-dotnet
+          - dev-lang/lua
