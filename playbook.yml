@@ -13,24 +13,10 @@
 
     - name: Copy package.accept_keywords
       copy:
-        src: "./etc/portage/package.accept_keywords/{{ item }}"
-        dest: "/etc/portage/package.accept_keywords/{{ item }}"
+        src: "./etc/portage/package.accept_keywords"
+        dest: "/etc/portage/package.accept_keywords"
         owner: root
         group: root
-      loop:
-        - chromedriver-bin
-        - emacs
-        - firebird
-        - github-cli
-        - litecli
-        - mycli
-        - php
-        - sqlglot
-        - dust
-        - eza
-        - hub
-        - tree-sitter-php
-        - fzf
 
     - name: Copy package.mask
       copy:
@@ -70,6 +56,7 @@
         - libpcre2
         - lttng-ust
         - libcanberra
+        - noto
 
     - name: Copy /etc/portage/repos.conf/gentoo.conf
       copy:
@@ -877,3 +864,7 @@
           - dev-libs/tree-sitter-php
           - app-eselect/eselect-dotnet
           - dev-lang/lua
+          - media-fonts/noto
+          - dev-util/pkgcheck
+          - dev-util/pkgdev
+          - dev-php/symfony-cli
