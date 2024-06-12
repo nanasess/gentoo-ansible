@@ -18,3 +18,4 @@ dev-python/sqlglot
 app-admin/terraform
 dev-libs/tree-sitter-php
 dev-php/symfony-cli
+app-benchmarks/kdiskmark

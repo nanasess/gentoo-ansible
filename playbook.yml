@@ -869,3 +869,4 @@
           - dev-util/pkgdev
           - dev-php/symfony-cli
           - media-fonts/udev-gothic
+          - app-benchmarks/kdiskmark
