@@ -1,1 +1,0 @@
-app-editors/emacs xft -gsettings gconf gtk -athena -Xaw3d dynamic-loading gif gui gzip-el harfbuzz imagemagick jpeg json libxml2 livecd m17n-lib mailutils png svg tiff toolkit-scroll-bars wide-int xwidgets cairo jit tree-sitter -X
