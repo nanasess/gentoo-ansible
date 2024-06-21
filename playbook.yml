@@ -35,21 +35,21 @@
         owner: root
         group: root
 
-    # - name: Copy package.use
-    #   copy:
-    #     src: "./etc/portage/package.use/{{ item }}"
-    #     dest: "/etc/portage/package.use/{{ item }}"
-    #     owner: root
-    #     group: root
-    #   loop:
-    #     - emacs
+    - name: Copy package.use
+      copy:
+        src: "./etc/portage/package.use/{{ item }}"
+        dest: "/etc/portage/package.use/{{ item }}"
+        owner: root
+        group: root
+      loop:
+        - emacs
     #     - emacs-common
     #     - git
     #     - qtwidgets
     #     - mysql
     #     - nodejs
-    #     - onedrive
-    #     - php
+        - onedrive
+        - php
     #     - eselect-php
     #     - pinentry
     #     - systemd
@@ -57,13 +57,14 @@
     #     - lttng-ust
     #     - libcanberra
     #     - noto
+        - ffmpeg
 
-    # - name: Copy /etc/portage/repos.conf/gentoo.conf
-    #   copy:
-    #     src: ./etc/portage/repos.conf/gentoo.conf
-    #     dest: /etc/portage/repos.conf/gentoo.conf
-    #     owner: root
-    #     group: root
+    - name: Copy /etc/portage/package.license
+      copy:
+        src: ./etc/portage/package.license
+        dest: /etc/portage/package.license
+        owner: root
+        group: root
 
     - name: Copy /etc/wsl.conf
       copy:
@@ -71,6 +72,27 @@
         dest: /etc/wsl.conf
         owner: root
         group: root
+
+    - name: Copy /etc/tmpfiles.d/wsl.conf
+      copy:
+        src: ./etc/tmpfiles.d/wsl.conf
+        dest: /etc/tmpfiles.d/wsl.conf
+        owner: root
+        group: root
+
+    ## see https://gist.github.com/onlime/8767e4e86d4205e32fbe354c8bea626c
+    - name: Composer | Install Composer latest-stable
+      get_url:
+        url: https://getcomposer.org/download/latest-stable/composer.phar
+        checksum: 'sha256:https://getcomposer.org/download/latest-stable/composer.phar.sha256sum'
+        dest: /usr/local/bin/composer.phar
+        mode: 0755
+
+    - name: Composer | Symlink composer.phar
+      file:
+        src: composer.phar
+        dest: /usr/local/bin/composer
+        state: link
 
     - name: Install required packages
       portage:
@@ -82,3 +104,29 @@
           - dev-vcs/git
           - app-editors/vim
           - app-admin/ansible
+          - gui-apps/wl-clipboard
+          - app-eselect/eselect-repository
+          - app-editors/emacs
+          - x11-apps/xrandr
+          - x11-apps/xeyes
+          - app-shells/zsh
+          - media-fonts/udev-gothic
+          - media-fonts/noto
+          - app-text/cmigemo
+          - dev-util/wakatime-cli
+          - app-shells/fzf
+          - x11-libs/libnotify
+          - net-misc/onedrive
+          - net-libs/nodejs
+          - sys-apps/eza
+          - dev-lang/php
+          - dev-python/setuptools
+          - sys-apps/ripgrep
+          - kde-apps/kcachegrind
+          - dev-util/github-cli
+          - www-client/google-chrome
+          - app-admin/terraform
+          - dev-lang/spidermonkey
+          - x11-misc/xvfb-run
+          - media-video/ffmpeg
+          - x11-apps/mesa-progs

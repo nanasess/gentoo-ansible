@@ -1,0 +1,6 @@
+media-video/ffmpeg libass lzma opus pulseaudio theora vpx
+media-libs/libsdl2 gles2 pipewire pulseaudio
+media-libs/libvpx postproc
+media-video/pipewire gstreamer
+media-sound/mpg123-base pulseaudio
+media-sound/pulseaudio-daemon gstreamer
