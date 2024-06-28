@@ -130,3 +130,12 @@
           - x11-misc/xvfb-run
           - media-video/ffmpeg
           - x11-apps/mesa-progs
+          - app-shells/sheldon
+          - dev-util/pkgdev
+          - dev-util/pkgcheck
+          - dev-dotnet/dotnet-sdk-bin
+          - net-dns/bind-tools
+          - net-misc/whois
+          - dev-libs/json-glib
+          - dev-dotnet/omnisharp-roslyn
+          - app-misc/jq
