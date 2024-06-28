@@ -139,3 +139,11 @@
           - dev-libs/json-glib
           - dev-dotnet/omnisharp-roslyn
           - app-misc/jq
+
+    - name: Install node.js packages globally.
+      community.general.npm:
+        name: "{{ item }}"
+        global: true
+      loop:
+        - wsl-open
+        - yarn
