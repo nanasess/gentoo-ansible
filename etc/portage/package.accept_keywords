@@ -1,2 +1,6 @@
 dev-util/wakatime-cli
 dev-util/github-cli **
+dev-db/pgcli
+dev-db/mycli
+dev-db/litecli
+dev-python/sqlglot

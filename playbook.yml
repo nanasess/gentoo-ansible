@@ -139,6 +139,9 @@
           - dev-libs/json-glib
           - dev-dotnet/omnisharp-roslyn
           - app-misc/jq
+          - dev-db/pgcli
+          - dev-db/litecli
+          - dev-db/mycli
 
     - name: Install node.js packages globally.
       community.general.npm:
