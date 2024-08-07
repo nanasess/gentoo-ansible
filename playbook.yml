@@ -144,6 +144,7 @@
           - dev-db/mycli
           - dev-vcs/git-lfs
           - dev-java/openjdk-bin
+          - app-admin/apache-tools
 
     - name: Install node.js packages globally.
       community.general.npm:
