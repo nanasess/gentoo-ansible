@@ -152,4 +152,3 @@
         global: true
       loop:
         - wsl-open
-        - yarn
