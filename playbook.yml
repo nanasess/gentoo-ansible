@@ -145,6 +145,7 @@
           - dev-vcs/git-lfs
           - dev-java/openjdk-bin
           - app-admin/apache-tools
+          - app-misc/google-cloud-cli # supertux88
 
     - name: Install node.js packages globally.
       community.general.npm:

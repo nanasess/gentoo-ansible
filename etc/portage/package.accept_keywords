@@ -4,3 +4,4 @@ dev-db/pgcli
 dev-db/mycli
 dev-db/litecli
 dev-python/sqlglot
+app-misc/google-cloud-cli
