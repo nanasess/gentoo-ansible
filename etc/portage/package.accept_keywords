@@ -1,21 +1,7 @@
-www-apps/chromedriver-bin
-sys-block/dust
-app-editors/emacs **
-sys-apps/eza
-dev-db/firebird
-app-shells/fzf
->=dev-util/github-cli-2.4.0
-app-crypt/gnupg
-*/*::haskell
-dev-vcs/hub
-dev-db/litecli
+dev-util/wakatime-cli
+dev-util/github-cli **
+dev-db/pgcli
 dev-db/mycli
->=dev-db/mysql-5.7
->=net-libs/nodejs-20.6.0
-dev-lang/php
-dev-php/pecl-apcu
+dev-db/litecli
 dev-python/sqlglot
-app-admin/terraform
-dev-libs/tree-sitter-php
-dev-php/symfony-cli
-app-benchmarks/kdiskmark
+app-misc/google-cloud-cli
