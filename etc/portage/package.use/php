@@ -1,1 +1,19 @@
 dev-lang/php acl bzip2 cli ctype fileinfo filter flatfile gdbm iconv ipv6 jit nls opcache phar posix readline session simplexml spell ssl systemd tokenizer unicode xml zlib -apache2 -apparmor -argon2 -avif -bcmath -berkdb -calendar -cdb -cgi -cjk curl -debug -embed -enchant -exif -ffi (-firebird) -fpm -ftp -d -gmp -imap -inifile intl -iodbc -kerberos -ldap -ldap-sasl -libedit -lmdb -mhash -mssql -mysql mysqli -oci8-instant-client -odbc -pcntl pdo -phpdbg postgres -qdbm (-selinux) -session-mm -sharedmem -snmp -soap sockets sodium sqlite -sysvipc -test -threads -tidy -tokyocabinet truetype -valgrind webp -xmlreader -xmlwriter -xpm -xslt zip gd
+# required by dev-lang/php-8.3.10::gentoo[gd]
+# required by @selected
+# required by @world (argument)
+>=media-libs/gd-2.3.3-r4 webp fontconfig
+# required by kde-frameworks/kirigami-6.5.0-r1::gentoo
+# required by kde-frameworks/ksvg-6.5.0::gentoo
+# required by kde-plasma/libplasma-6.1.4::gentoo
+# required by kde-plasma/polkit-kde-agent-6.1.4::gentoo
+# required by kde-frameworks/kauth-6.5.0::gentoo
+# required by kde-frameworks/kio-6.5.0::gentoo
+# required by kde-frameworks/kcmutils-6.5.0::gentoo
+>=dev-qt/qt5compat-6.7.2 qml
+# required by kde-plasma/libplasma-6.1.4::gentoo
+# required by kde-plasma/polkit-kde-agent-6.1.4::gentoo
+# required by kde-frameworks/kauth-6.5.0::gentoo
+# required by kde-frameworks/kio-6.5.0::gentoo
+# required by kde-frameworks/kcmutils-6.5.0::gentoo
+>=kde-frameworks/kconfig-6.5.0 qml

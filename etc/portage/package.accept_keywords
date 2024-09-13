@@ -5,3 +5,5 @@ dev-db/mycli
 dev-db/litecli
 dev-python/sqlglot
 app-misc/google-cloud-cli
+dev-lang/php
+app-editors/emacs **

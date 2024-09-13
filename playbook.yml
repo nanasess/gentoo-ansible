@@ -18,15 +18,12 @@
         owner: root
         group: root
 
-    # - name: Copy package.mask
-    #   copy:
-    #     src: "./etc/portage/package.mask/{{ item }}"
-    #     dest: "/etc/portage/package.mask/{{ item }}"
-    #     owner: root
-    #     group: root
-    #   loop:
-    #     - emacs
-    #     - mysql
+    - name: Copy package.mask
+      copy:
+        src: "./etc/portage/package.mask"
+        dest: "/etc/portage/package.mask"
+        owner: root
+        group: root
 
     - name: Copy /etc/portage/package.unmask
       copy:
