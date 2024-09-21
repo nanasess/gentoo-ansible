@@ -7,3 +7,4 @@ dev-python/sqlglot
 app-misc/google-cloud-cli
 dev-lang/php
 app-editors/emacs **
+net-misc/onedrive
