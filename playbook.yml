@@ -146,10 +146,11 @@
           - app-i18n/skktools
           - media-fonts/noto-emoji
           - net-misc/stunnel
+          - app-arch/sharutils  # uuencode
 
-    - name: Install node.js packages globally.
-      community.general.npm:
-        name: "{{ item }}"
-        global: true
-      loop:
-        - wsl-open
+    # - name: Install node.js packages globally.
+    #   community.general.npm:
+    #     name: "{{ item }}"
+    #     global: true
+    #   loop:
+    #     - wsl-open
