@@ -55,6 +55,7 @@
     #     - libcanberra
     #     - noto
         - ffmpeg
+        - gnupg
 
     - name: Copy /etc/portage/package.license
       copy:
@@ -147,6 +148,9 @@
           - media-fonts/noto-emoji
           - net-misc/stunnel
           - app-arch/sharutils  # uuencode
+          - net-misc/telnet-bsd
+          # XXX nghttp3-1.5.0 をインストールしてから 1.6.0 をインストールする必要がある
+          - net-libs/nghttp3
 
     # - name: Install node.js packages globally.
     #   community.general.npm:
