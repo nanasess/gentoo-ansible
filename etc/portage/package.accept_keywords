@@ -11,3 +11,4 @@ net-misc/onedrive
 app-admin/cf-terraforming
 dev-python/pipx
 dev-python/userpath
+dev-php/symfony-cli
