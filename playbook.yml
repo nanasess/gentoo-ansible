@@ -120,11 +120,11 @@
           - dev-lang/php
           - dev-python/setuptools
           - sys-apps/ripgrep
-          - kde-apps/kcachegrind
+          # - kde-apps/kcachegrind
           - dev-util/github-cli
           - www-client/google-chrome
           - app-admin/terraform
-          - dev-lang/spidermonkey
+          # - dev-lang/spidermonkey
           - x11-misc/xvfb-run
           - media-video/ffmpeg
           - x11-apps/mesa-progs
