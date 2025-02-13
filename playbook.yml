@@ -152,6 +152,8 @@
           # XXX nghttp3-1.5.0 をインストールしてから 1.6.0 をインストールする必要がある
           - net-libs/nghttp3
           - dev-java/gradle-bin
+          - dev-lang/ruby
+          - dev-ruby/rdtool
 
     # - name: Install node.js packages globally.
     #   community.general.npm:
