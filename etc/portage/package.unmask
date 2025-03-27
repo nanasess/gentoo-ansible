@@ -1,1 +1,2 @@
 >=www-client/google-chrome-126.0.6478.55
+>=virtual/dotnet-sdk-9.0
