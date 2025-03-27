@@ -12,3 +12,5 @@ app-admin/cf-terraforming
 dev-python/pipx
 dev-python/userpath
 dev-php/symfony-cli
+dev-python/pyfzf
+app-emacs/emacs-common
