@@ -14,3 +14,4 @@ dev-python/userpath
 dev-php/symfony-cli
 dev-python/pyfzf
 app-emacs/emacs-common
+app-admin/op-cli-bin

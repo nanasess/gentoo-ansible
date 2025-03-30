@@ -154,6 +154,7 @@
           - dev-java/gradle-bin
           - dev-lang/ruby
           - dev-ruby/rdtool
+          - app-admin/1password # https://github.com/jaredallard/overlay/tree/main/app-admin/1password
 
     # - name: Install node.js packages globally.
     #   community.general.npm:
