@@ -2,3 +2,4 @@
 >app-admin/ansible-10
 >dev-dotnet/dotnet-sdk-bin-9
 >=virtual/dotnet-sdk-9.0
+>=dev-dotnet/dotnet-sdk-9.0
