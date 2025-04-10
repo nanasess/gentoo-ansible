@@ -155,6 +155,7 @@
           - dev-lang/ruby
           - dev-ruby/rdtool
           - app-admin/1password # https://github.com/jaredallard/overlay/tree/main/app-admin/1password
+          - app-portage/gentoolkit
 
     # - name: Install node.js packages globally.
     #   community.general.npm:
