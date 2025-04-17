@@ -156,6 +156,9 @@
           - dev-ruby/rdtool
           - app-admin/1password # https://github.com/jaredallard/overlay/tree/main/app-admin/1password
           - app-portage/gentoolkit
+          - dev-python/virtualenv
+          - dev-python/virtualenvwrapper
+          - dev-python/pip      # deprecated
 
     # - name: Install node.js packages globally.
     #   community.general.npm:
