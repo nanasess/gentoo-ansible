@@ -161,6 +161,9 @@
           - dev-python/pip      # deprecated
           - app-admin/awscli
           - net-misc/socat
+          - app-portage/mirrorselect
+          - dev-php/pecl-redis
+          - app-text/pdf2html
 
     # - name: Install node.js packages globally.
     #   community.general.npm:

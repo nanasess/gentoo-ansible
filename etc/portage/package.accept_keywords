@@ -8,6 +8,7 @@ app-misc/google-cloud-cli
 dev-lang/php
 app-editors/emacs **
 net-misc/onedrive
+sys-devel/gcc:15
 app-admin/cf-terraforming
 dev-python/pipx
 dev-python/userpath
@@ -15,3 +16,4 @@ dev-php/symfony-cli
 dev-python/pyfzf
 app-emacs/emacs-common
 app-admin/op-cli-bin
+dev-python/click
